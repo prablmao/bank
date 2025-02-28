@@ -1,48 +1,151 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #333;
-    color: white;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    width: 80%;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.app-container {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
 }
 
-header {
-    text-align: center;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00c853;
+    padding: 15px 30px;
+    border-radius: 10px;
     margin-bottom: 30px;
 }
 
-.balance {
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-item {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .nav-item:hover {
+    text-decoration: underline;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.profile-info .profile-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.profile-info .profile-email {
+    font-size: 14px;
+    color: #555;
+}
+
+.balance-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+.balance-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.balance {
+    font-size: 36px;
+    font-weight: 600;
+    color: #00c853;
     margin-bottom: 20px;
 }
 
-button {
+.btn {
     background-color: #00c853;
     color: white;
     border: none;
-    padding: 10px;
-    cursor: pointer;
+    padding: 10px 20px;
     font-size: 16px;
-    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-button:hover {
+.btn:hover {
     background-color: #007b2f;
 }
 
 .transaction-section {
-    text-align: center;
-    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-input {
+.transaction-input {
     padding: 10px;
     font-size: 16px;
     width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.transaction-history {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.transaction-history li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-history li span {
+    color: #555;
+}
+
+.history-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
 }
