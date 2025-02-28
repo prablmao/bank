@@ -4,23 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake CashApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Fake CashApp</h1>
-        </header>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="logo">FakeCashApp</div>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-item">Home</a></li>
+                <li><a href="#" class="nav-item">Transactions</a></li>
+                <li><a href="#" class="nav-item">Settings</a></li>
+            </ul>
+        </nav>
 
-        <div class="balance">
-            <p>Balance: <span id="balance">$0</span></p>
-            <button id="addMoneyButton">Add Money</button>
+        <div class="profile-section">
+            <img src="https://via.placeholder.com/80" alt="User Avatar" class="profile-avatar">
+            <div class="profile-info">
+                <p class="profile-name">John Doe</p>
+                <p class="profile-email">johndoe@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="balance-section">
+            <h2>Your Balance</h2>
+            <p id="balance" class="balance">$0</p>
+            <button id="addMoneyButton" class="btn">Add Money</button>
         </div>
 
         <div class="transaction-section">
             <h2>Make a Transaction</h2>
-            <input type="number" id="amount" placeholder="Enter amount">
-            <button id="transferButton">Transfer</button>
+            <input type="number" id="amount" placeholder="Enter amount" class="transaction-input">
+            <button id="transferButton" class="btn">Transfer</button>
+        </div>
+
+        <div class="history-section">
+            <h2>Transaction History</h2>
+            <ul id="transactionHistory" class="transaction-history">
+                <!-- Transaction history will be dynamically populated here -->
+            </ul>
         </div>
     </div>
 
